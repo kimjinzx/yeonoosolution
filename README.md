@@ -6,8 +6,8 @@
 - 개발환경
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="400" alt="KakaoTalk_Photo_2023-06-20-09-20-42" src="https://github.com/kimjinzx/yeonoosolution/assets/118345975/76d6da04-1be4-4e62-8f23-260f7eb78e5c">
 
-개발파트 - 같이사요 게시판
-주요기능 - 신청하기, 수락/거절/취소, 찜, 현재거래(게시글)상태 제어, 추천/비추천 기능
+개발파트 - 출하관리
+주요기능 - 출하조회, 출하등록/수정/삭제, 품목조회, 품목등록/수정/삭제, 출하확정/취소
 
 
 <p>
