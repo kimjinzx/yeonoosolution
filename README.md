@@ -11,8 +11,8 @@
 
 
 <p>
-[여누솔루션 문서 (PDF)] - (https://drive.google.com/file/d/12XciSMn2fV-XokPY7gznVzR8dgie26Ds/view?usp=sharing)
+[여누솔루션 문서 (PDF)] <br> (https://drive.google.com/file/d/12XciSMn2fV-XokPY7gznVzR8dgie26Ds/view?usp=sharing)
 <br>
-[여누솔루션 출하 부분 (PDF)] - https://drive.google.com/file/d/1sZ1SdJcoN4ooZdEDZ-vye_W0NxRy7f2i/view?usp=sharing
+[여누솔루션 출하 부분 (PDF)] <br> https://drive.google.com/file/d/1sZ1SdJcoN4ooZdEDZ-vye_W0NxRy7f2i/view?usp=sharing
 <br>
-[여누솔루션 출하 부분 시연영상 (mp4)] - https://drive.google.com/file/d/1yGdoXUsHsL6gugiHzPWmvuRjVDaTM3iV/view?usp=sharing
+[여누솔루션 출하 부분 시연영상 (mp4)] <br> https://drive.google.com/file/d/1yGdoXUsHsL6gugiHzPWmvuRjVDaTM3iV/view?usp=sharing
