@@ -6,6 +6,8 @@
 - 개발환경
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="400" alt="KakaoTalk_Photo_2023-06-20-09-20-42" src="https://github.com/kimjinzx/yeonoosolution/assets/118345975/76d6da04-1be4-4e62-8f23-260f7eb78e5c">
 
+- 개발진행과정 - 주어진 3주라는 기간동안 ERP,MES개발을 하기위해 제공받은 250개의 테이블과 연결관계를 분석하여 총 20개의 테이블로 축소시킨 후 개발을 진행하였습니다.
+              또한 개발과정에 있어 RestAPI를 사용하여 url과 네이밍 룰에 있어 통일성을 부여했으며 RDBMS로 오라클을 사용하여 다중쿼리문 처리를 오라클 프로시저를 사용하였습니다. 
 - 개발파트 - 출하관리
 - 주요기능 - 출하조회, 출하등록/수정/삭제, 품목조회, 품목등록/수정/삭제, 출하확정/취소
 
