@@ -11,6 +11,8 @@
 - 개발진행과정 - 주어진 3주라는 기간동안 ERP,MES고도화 개발을 하기위해 기업에서 제공받은 250개의 테이블과 연결관계를 분석하여 총 20개의 테이블로 축소시킨 후 개발을 진행하였습니다.
               또한 개발과정에 있어 RestAPI를 사용하여 url과 네이밍 룰에 있어 통일성을 부여했으며 RDBMS로 오라클을 사용하여 다중쿼리문 처리를 오라클 프로시저를 사용하였습니다. 
 
+<p>
+(https://github.com/kimjinzx/yeonoosolution/assets/118345975/35c86488-6f96-487b-abd2-1af262860c2c)
 
 <p>
 [여누솔루션 문서 (PDF)] <br> (https://drive.google.com/file/d/12XciSMn2fV-XokPY7gznVzR8dgie26Ds/view?usp=sharing)
