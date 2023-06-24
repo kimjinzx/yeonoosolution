@@ -12,6 +12,10 @@
               또한 개발과정에 있어 RestAPI를 사용하여 url과 네이밍 룰에 있어 통일성을 부여했으며 RDBMS로 오라클을 사용하여 다중쿼리문 처리를 오라클 프로시저를 사용하였습니다. 
 
 <p>
+   
+
+
+<img src="![KakaoTalk_Photo_2023-06-24-11-24-35](https://github.com/kimjinzx/yeonoosolution/assets/118345975/3bf12648-b96f-4140-9064-69fbc2edd95a)" >
 (https://github.com/kimjinzx/yeonoosolution/assets/118345975/35c86488-6f96-487b-abd2-1af262860c2c)
 
 <p>
