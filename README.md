@@ -14,9 +14,8 @@
 <p>
    
 
+<img width="400" alt="KakaoTalk_Photo_2023-06-20-09-20-42" src="(https://github.com/kimjinzx/yeonoosolution/assets/118345975/3bf12648-b96f-4140-9064-69fbc2edd95a" >
 
-<img src="![KakaoTalk_Photo_2023-06-24-11-24-35](https://github.com/kimjinzx/yeonoosolution/assets/118345975/3bf12648-b96f-4140-9064-69fbc2edd95a)" >
-(https://github.com/kimjinzx/yeonoosolution/assets/118345975/35c86488-6f96-487b-abd2-1af262860c2c)
 
 <p>
 [여누솔루션 문서 (PDF)] <br> (https://drive.google.com/file/d/12XciSMn2fV-XokPY7gznVzR8dgie26Ds/view?usp=sharing)
