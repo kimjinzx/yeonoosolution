@@ -197,8 +197,8 @@
     <table border="1" class="itemInsertForm" >
       <tr>
          <th>출고번호</th>
-         <th>사용가능 창고번호</th>
-         <th>아이템코드</th>
+         <th>사용가능 창고</th>
+         <th>제품명</th>
          <th>수량</th>
          <th>비고</th>
       </tr>
@@ -211,16 +211,16 @@
          </select></td>
          
          <td><select name="whCode" required="required" style="border:none;">
-            <option value="" selected>창고번호 찾기</option>
+            <option value="" selected>창고 찾기</option>
             <c:forEach var="WC" items="${whCodeList}">
-               <option value="${WC.whCode}">${WC.whCode}</option>
+               <option value="${WC.whCode}">${WC.whName}</option>
             </c:forEach>
          </select></td>
          
          <td><select name="itemCode" required="required" style="border:none;">
-            <option value="" selected>제품번호 찾기</option>
+            <option value="" selected>제품 찾기</option>
             <c:forEach var="IC" items="${itemCodeList}">
-               <option value="${IC.itemCode}">${IC.itemCode}</option>
+               <option value="${IC.itemCode}">${IC.itemName}</option>
             </c:forEach>
          </select></td>
          
@@ -242,7 +242,7 @@
             <th>순번</th>
             <th>제품번호</th>
             <th>제품명</th>
-            <th>창고번호</th>
+            <th>창고이름</th>
             <th>수량</th>
             <th>단가</th>
             <th>총액</th>

@@ -33,6 +33,8 @@ public class SDMStOutDto {
 	private String 	companyName;
 	private String  itemName;
 	private Long	salesPrice;
+	private String	whName;
+	
 	
 	
 	// 단가 * 출고수량 = 총액

@@ -14,20 +14,22 @@
       LEFT JOIN company c 
       ON s.customer_code = c.company_code
       WHERE s.delete_status = 'N'
-      <if test="customerCode != null and customerCode != ''">
-         AND s.customer_code = #{customerCode}
-      </if>
+	      <if test="customerCode != null and customerCode != ''">
+	         AND s.customer_code = #{customerCode}
+	      </if>
       ORDER BY LENGTH(s.out_code),s.out_code ASC
    </select>
 
    <select id="sdmSelectStOutDetailDtoListByOutCode" resultType="SDMStOutDto" parameterType="SDMStOutDto" >
       SELECT sd.out_code, sd.item_code, i.item_name, sd.out_quantity,
-             i.sales_price, sd.wh_code, sd.sorder, sd.delete_status,
+             i.sales_price, sd.wh_code, sd.sorder, w.wh_name,
              (i.sales_price * sd.out_quantity) AS totalPrice,
               sd.memo
       FROM st_out_detail sd
       LEFT JOIN item i
       ON sd.item_code = i.item_code
+      LEFT JOIN wh w
+      ON sd.wh_code = w.wh_code
       WHERE sd.out_code = #{outCode}
       ORDER BY sd.sorder asc
    </select> 
@@ -98,19 +100,18 @@
    </select>
    
    <select id="sdmWhCodeList" resultType="SDMStOutDto">
-      SELECT wh_code FROM wh WHERE use_yn ='Y' ORDER BY LENGTH(wh_code),wh_code ASC
+      SELECT wh_code, wh_name FROM wh WHERE use_yn ='Y' ORDER BY LENGTH(wh_code),wh_code ASC
    </select>
    
    <select id="sdmItemCodeList" resultType="SDMStOutDto">
-      SELECT item_code FROM item WHERE wh_code = 'WH1' and use_yn = 'Y' ORDER BY LENGTH(item_code),item_code ASC
+      SELECT item_code, item_name FROM item WHERE wh_code = 'WH1' and use_yn = 'Y' ORDER BY LENGTH(item_code),item_code ASC
    </select>
 
-   <update id="sdmDeleteStOutItemByOutCodeAndSorder" parameterType="SDMStOutDto">
-      UPDATE st_out_detail
-      SET delete_status = 'Y'
-      WHERE out_code = #{outCode}
+   <delete id="sdmDeleteStOutItemByOutCodeAndSorder" parameterType="SDMStOutDto">
+	  DELETE FROM st_out_detail
+	  WHERE out_code = #{outCode}
       AND sorder = #{sorder}
-   </update>   
+   </delete>   
    
    <select id="sdmInsertStOutItem" parameterType="SDMStOutDto" statementType="CALLABLE">
       {
@@ -130,7 +131,7 @@
    
    
    <select id="sdmSelectStOutWithDetailByCustomerCode" resultType="SDMStOutDto">
-      SELECT s.delete_status, sd.delete_status,
+      SELECT s.delete_status,
                 s.out_type, s.customer_code, c.company_name, 
               s.order_code, s.out_code, s.out_date, s.reg_user,
               s.reg_date, i.item_name, i.item_code, sd.out_quantity,
@@ -143,7 +144,7 @@
       ON sd.item_code = i.item_code
       LEFT JOIN company c
       ON s.customer_code = c.company_code
-      WHERE s.delete_status = 'N' and sd.delete_status = 'N' 
+      WHERE s.delete_status = 'N' 
       <choose>
              <when test="customerCode != null and customerCode != ''">
                 and s.customer_code = #{customerCode}

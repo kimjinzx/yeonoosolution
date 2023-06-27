@@ -235,14 +235,13 @@
 			    	$('#outDetailTable tbody').empty();
 			    	
 			        $.each(response.outDetailList, function(index, outDetailList) {
-			        	if (outDetailList.deleteStatus === 'N') {
 			        	var rowIndex = index + 1;
 			        	
 			        	var row = '<tr>' +
 			            '<td>' + outDetailList.sorder + '<input type="hidden" id="sorder' + rowIndex + '" value="' +outDetailList.sorder + '"><input type="hidden" id="outCode' + rowIndex + '" value="' +outDetailList.outCode + '"></td>' +
 			            '<td class="listColor2">' + outDetailList.itemCode + '</td>' +
 			            '<td class="listColor1">' + outDetailList.itemName + '</td>' +
-			            '<td class="listColor1">' + outDetailList.whCode + '</td>' +
+			            '<td class="listColor1">' + outDetailList.whName + '</td>' +
 			            '<td class="listColor2"><input type="number" id="outQuantity' + rowIndex + '" name="outQuantity" value="' + outDetailList.outQuantity + '" class="listColor2" style="width:70px;">EA</td>'+      
 			            '<td class="listColor3" style="width:80px;">' + outDetailList.salesPrice + '원</td>' +
 			            '<td class="listColor1">' + outDetailList.totalPrice + '원</td>' +
@@ -253,7 +252,7 @@
 
 			          $('#outDetailTable tbody').append(row);
 			          	console.log(outDetailList);
-			        }
+			        
 			        });
 			    },
 			    error: function(error) {

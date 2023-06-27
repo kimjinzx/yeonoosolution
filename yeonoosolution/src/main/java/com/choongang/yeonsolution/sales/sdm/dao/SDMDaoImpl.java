@@ -163,7 +163,7 @@ public class SDMDaoImpl implements SDMDao {
 	@Override
 	public void deleteStOutItemByOutCodeAndSorder(SDMStOutDto stout) {
 		try {
-			session.update("sdmDeleteStOutItemByOutCodeAndSorder",stout);
+			session.delete("sdmDeleteStOutItemByOutCodeAndSorder",stout);
 		} catch (Exception e) {
 			log.error("daoimpl deleteStOutItemByOutCodeAndSorder -> {} ",e.getMessage());
 		}		
