@@ -261,52 +261,8 @@
 			  });
 			}
 
-		
-		
-		 
-		/*  function confirmCancel() {
-			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
-			  if (selectedRadio) {
-			    var outCode = selectedRadio.parentNode.nextElementSibling.textContent;
 
-			    $.ajax({
-			      url: '/sales/stock/confirmCanelYN/' + outCode,
-			      type: "GET",
-			      dataType: "text",
-			      data: {outCode : outCode},
-			      success: function (data) {
-					        if (data === "1") {
-					          alert("확정상태에서만 취소가능합니다.");
-					        } else if (confirm("확정취소하시겠습니까?")) {
-			          
-			        $.ajax({
-			            url: "/sales/stock/cancel/" + outCode,
-			            type: "PATCH",
-			            data: { outCode: outCode },
-			            success: function (response) {
-					              alert("확정취소 되었습니다.	");
-					              location.reload();
-			            },
-			            error: function (error) {
-			            },
-			          });
-			        }
-			      },
-			      error: function (error) {
-			      },
-			    });
-			  } else {
-			    return false;
-			  }
-			} */
-
-
-		
-
-		
-		  
-		  
-		  function confirm() { /* 출고확정 */
+		function confirm() { /* 출고확정 */
 			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
 			  if (selectedRadio) {
 			    
@@ -348,6 +304,48 @@
 			  
 			  }
 			} 
+		 
+		 /* function confirmCancel() {
+			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
+			  if (selectedRadio) {
+			    var outCode = selectedRadio.parentNode.nextElementSibling.textContent;
+
+			    $.ajax({
+			      url: '/sales/stock/confirmCanelYN/' + outCode,
+			      type: "GET",
+			      dataType: "text",
+			      data: {outCode : outCode},
+			      success: function (data) {
+					        if (data === "1") {
+					          alert("확정상태에서만 취소가능합니다.");
+					        } else if (confirm("확정취소하시겠습니까?")) {
+			          
+			        $.ajax({
+			            url: "/sales/stock/cancel/" + outCode,
+			            type: "PATCH",
+			            data: { outCode: outCode },
+			            success: function (response) {
+					              alert("확정취소 되었습니다.	");
+					              location.reload();
+			            },
+			            error: function (error) {
+			            },
+			          });
+			        }
+			      },
+			      error: function (error) {
+			      },
+			    });
+			  } else {
+			    return false;
+			  }
+			}  */
+		 
+		 
+		 
+		 
+		 
+		 
 		  
 		  function stOutDelete() { /* 출고리스트 행 삭제 */
 			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
