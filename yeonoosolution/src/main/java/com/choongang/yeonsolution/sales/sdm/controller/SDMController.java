@@ -89,29 +89,28 @@ public class SDMController {
 		return "";
 	}
 	
-	@ResponseBody
-	@GetMapping(value = "/sales/stock/confirmCancelYN/{outCode}") // 출고상태가 확정인지 아닌지 체크
-	public String confirmCancleYNByOutCode (SDMStOutDto stout, @PathVariable String outCode, Model model) {
-		
-		System.out.println("out코드 hahaha -> "+stout.getOutCode());
-		// 일단 없다는 가정하에 진행	
-		String resultStr = "";
-				
-//		System.out.println("confirmCancleYNByOutCode outType -> "+stout.getOutType());
-				 
-		String outTypeYN = ss.outTypeCCYNDetails(outCode); 
-		System.out.println("해당 행의 출고유형 -> "+outTypeYN);
-		model.addAttribute("outTypeYN", outTypeYN);
-				
-		//저장일 경우 1을 리턴 아니면 0을 리턴
-		if(outTypeYN.equals("저장") ) {
-				resultStr = "1";
-			} else {
-				resultStr = "0"; 
-			}
-		
-		return resultStr;
-	}
+//	@ResponseBody
+//	@GetMapping(value = "/sales/stock/confirmCancelYN/{outCode}") // 출고상태가 확정인지 아닌지 체크
+//	public String confirmCancleYNByOutCode (SDMStOutDto stout, @PathVariable String outCode, Model model) {
+//		
+//		// 일단 없다는 가정하에 진행	
+//		String resultStr = "";
+//				
+////		System.out.println("confirmCancleYNByOutCode outType -> "+stout.getOutType());
+//				 
+//		String outTypeYN = ss.outTypeCCYNDetails(outCode); 
+//		System.out.println("해당 행의 출고유형 -> "+outTypeYN);
+//		model.addAttribute("outTypeYN", outTypeYN);
+//				
+//		//저장일 경우 1을 리턴 아니면 0을 리턴
+//		if(outTypeYN.equals("저장") ) {
+//				resultStr = "1";
+//			} else {
+//				resultStr = "0"; 
+//			}
+//		
+//		return resultStr;
+//	}
 	
 	@ResponseBody
 	@PatchMapping(value = "/sales/stock/cancel/{outCode}") // 출고확정 취소 버튼

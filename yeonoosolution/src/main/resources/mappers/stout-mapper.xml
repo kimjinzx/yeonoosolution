@@ -46,11 +46,6 @@
       WHERE out_code = #{outCode}
    </update>
    
-   <!-- <select id="JHOutTypeCCYN" parameterType="java.lang.String" resultType="SDMStOutDto" >
-      SELECT out_type
-      FROM st_out
-      WHERE out_code = #{outCode}
-   </select>  -->
    
    <insert id="sdmInsertStOut" parameterType="SDMStOutDto">
       <selectKey keyProperty="outCode" resultType="String" order="BEFORE">
@@ -168,5 +163,11 @@
       SET good_quantity = good_quantity + #{outQuantity}
       WHERE item_code = #{itemCode} and wh_code = #{whCode} 
    </update>
+   
+   <select id="JHOutTypeCCYN" parameterType="java.lang.String" resultType="SDMStOutDto" >
+      SELECT out_type
+      FROM st_out
+      WHERE out_code = #{outCode}
+   </select>  
    
 </mapper>

@@ -285,7 +285,7 @@
 			  }
 			}
 		
-		 function confirmCancel() {  
+		function confirmCancel() {  
 			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
 			  if (selectedRadio) {
 			    var outCode = selectedRadio.parentNode.nextElementSibling.textContent;
@@ -302,16 +302,16 @@
 				      }
 			          });
 			  
-			  }
+			  } 
 			} 
-		 
+		
 		 /* function confirmCancel() {
 			  var selectedRadio = document.querySelector('input[name="rd1"]:checked');
 			  if (selectedRadio) {
 			    var outCode = selectedRadio.parentNode.nextElementSibling.textContent;
 
 			    $.ajax({
-			      url: '/sales/stock/confirmCanelYN/' + outCode,
+			      url: '/sales/stock/confirmCancelYN/' + outCode,
 			      type: "GET",
 			      dataType: "text",
 			      data: {outCode : outCode},
@@ -324,9 +324,11 @@
 			            url: "/sales/stock/cancel/" + outCode,
 			            type: "PATCH",
 			            data: { outCode: outCode },
-			            success: function (response) {
+			            success: function (data) {
+			            	if(data === "0"){
 					              alert("확정취소 되었습니다.	");
 					              location.reload();
+			            	}
 			            },
 			            error: function (error) {
 			            },
@@ -340,6 +342,7 @@
 			    return false;
 			  }
 			}  */
+		 
 		 
 		 
 		 
