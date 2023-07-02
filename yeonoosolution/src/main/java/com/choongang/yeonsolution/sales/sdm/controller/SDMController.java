@@ -191,7 +191,7 @@ public class SDMController {
 	@GetMapping(value = "/sales/stock/detail/") // 전체 행 조회 및 검색
 	public String outListWithDetailByCustomerCode (SDMStOutDto stout, String customerCode, Model model) {
 		 
-		// 출고리스트 조회 
+		// 출고리스트 조회  
 		List<SDMStOutDto> outListWithDetailByCustomerCode = ss.findStOutListWithDetailByCustomerCode(customerCode);
 		model.addAttribute("outListWithDetail", outListWithDetailByCustomerCode);
 		
